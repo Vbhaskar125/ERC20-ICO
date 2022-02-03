@@ -50,6 +50,7 @@ allowance <-- Returns the amount which _spender is still allowed to withdraw fro
 
 
                                         Events
+ List of events to be triggered                                       
   
                              event Transfer(address indexed _from, address indexed _to, uint256 _value)
  Transfer <--MUST trigger when tokens are transferred, including zero value transfers.-->
