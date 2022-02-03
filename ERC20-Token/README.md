@@ -15,10 +15,10 @@ basic functionality - to facilitate transfer and transaction of tokens, as well 
 
                 
                                                     
-                                                    function symbol() public view returns (string)
+                                                function symbol() public view returns (string)
  symbol (Returns the symbol of the token. ) 
  
-                                                  function decimals() public view returns (uint8)
+                                                function decimals() public view returns (uint8)
 
 decimals ( Returns the number of decimals the token uses - e.g. 8, means to divide the token amount by 100000000 to get its user representation. )
                                                           
@@ -27,23 +27,23 @@ decimals ( Returns the number of decimals the token uses - e.g. 8, means to divi
 
 totalSupply ( Returns the total token supply.)              
 
-                                                function balanceOf(address _owner) public view returns (uint256 balance)                                      
+                                    function balanceOf(address _owner) public view returns (uint256 balance)                 
 balanceOf ( Returns the account balance of another account with address _owner) 
 
-                                               function transfer(address _to, uint256 _value) public returns (bool success)
+                                   function transfer(address _to, uint256 _value) public returns (bool success)
 <-- Transfers _value amount of tokens to address _to, and MUST fire the Transfer event. The function SHOULD throw if the message caller’s account balance does not have enough tokens to spend. -->
 <-- Transfers of 0 values MUST be treated as normal transfers and fire the Transfer event. -->
                                              
                                             
-                                      function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
+                                  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
 transferFrom <--Transfers _value amount of tokens from address _from to address _to, and MUST fire the Transfer event.-->
                                   
                                   
-                                        function approve(address _spender, uint256 _value) public returns (bool success)
+                                  function approve(address _spender, uint256 _value) public returns (bool success)
  approve <-- Allows _spender to withdraw from your account multiple times, up to the _value amount. If this function is called again it overwrites the current allowance with _value. -->
                                  
                                 
-                                        function allowance(address _owner, address _spender) public view returns (uint256 remaining)
+                                 function allowance(address _owner, address _spender) public view returns (uint256 remaining)
 allowance <-- Returns the amount which _spender is still allowed to withdraw from _owner. -->
                                
                               
