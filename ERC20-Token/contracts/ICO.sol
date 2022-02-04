@@ -37,9 +37,12 @@ function startSale(
         maxTokens_ = _maxPurchase;
         priceOfToken_ = _tokenPrice;
         amountRaised_ =0;
-       
-}
+       }
 
+function isIcoActive() external view returns (bool){
+    if(endTime_ != 0 && endTime_ >  block.timestamp) return true;
+    return false;
+}
 
 function buy(uint _quantity) payable external icoIsActive returns (bool success){
     require(_quantity > minTokens_ && _quantity < maxTokens_ ,"out of token limits");
